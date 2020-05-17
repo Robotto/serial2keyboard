@@ -11,4 +11,4 @@ Easiest way if you have python installed is to just "python3 serial2keyboard.py 
 
 There's also a binary compiled with pyinstaller for linux, hoping to add more soonish.
 
-The precompiled binaries shouln't have any extra requirements [TODO: TEST IF THIS IS A LIE].
+The precompiled binaries shouldn't have any extra requirements [TODO: TEST IF THIS IS A LIE].
