@@ -1,5 +1,5 @@
 # serial2keyboard
-Python script that listens to serial data and pushes virtual keyboard keys. Baudrate is hardcoded to 115200 right now.. deal with it...
+Python script that listens to serial data and pushes virtual keyboard keys. Baudrate is hardcoded to 115200 right now.. deal with it... Thank you to CalPolyUROV for the nifty serial list function [from here](https://github.com/CalPolyUROV/UROV2019/blob/master/raspi/snr/comms/serial/serial_finder.py) 
 
 # requirements if you want to run it with python:
 ```
