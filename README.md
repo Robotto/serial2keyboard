@@ -6,9 +6,20 @@ Python script that listens to serial data and pushes virtual keyboard keys. Baud
 pip3 install pynput pyserial
 ```
 
-# how to run it
-Easiest way if you have python installed is to just "python3 serial2keyboard.py [port] [optional: baudrate]"
+# how to run it with python3
+Easiest way if you have python installed is to just "python3 serial2keyboard.py [port] [optional: baudrate]" 
+This shold run on any operating system with the required packages installed.
 
-There's also a binary compiled with pyinstaller for linux, hoping to add more soonish.
+# Running the precompiled binaries
 
-The precompiled binaries shouldn't have any extra requirements [Tested on linux, osx and windows].
+There's precompiled binaries built with pyinstaller for windows, and linux.
+
+The exe requires python38.dll to sit next to it, in order to run.
+
+On windows type something like: 
+```serial2keyboard.exe COM3 9600```
+On linux you go:
+```./serial2keyboard /dev/ttyUSB0 9600```
+
+# Waitaminute.. what's my serial port??
+Just run the program without any additional arguments to run a scan that results in a list of suitable canditates.
