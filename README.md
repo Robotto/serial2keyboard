@@ -18,7 +18,7 @@ This shold run on any operating system with the required packages installed.
 
 There's precompiled binaries built with pyinstaller (--onefile) for Windows, OSX and linux.
 
-The exe requires python38.dll to sit next to it, in order to run.
+They shouldn't require you to install anything else, but I've only tested on systems with full python installations.. So.. Your mileage may vary... 
 
 On windows type something like: 
 ```serial2keyboard.exe COM3 9600```
