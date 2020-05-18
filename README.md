@@ -1,5 +1,9 @@
 # serial2keyboard
-Python script that listens to serial data and pushes virtual keyboard keys. Baudrate defaults to 9600, but is changeable with the optional second command line agument. Thank you to CalPolyUROV for the nifty serial list function [from here](https://github.com/CalPolyUROV/UROV2019/blob/master/raspi/snr/comms/serial/serial_finder.py) 
+Python script that listens to serial data and pushes virtual keyboard keys. Baudrate defaults to 9600, but is changeable with the optional second command line agument. 
+
+This works really well with Arduino's 
+```Serial.prinln()``` function, as it waits for a newline terminated ASCII string to arrive, so an arduino could go:
+```Serial.println("password");``` and this program would type ```password``` and press [ENTER] for you.
 
 # requirements if you want to run it with python:
 ```
@@ -22,4 +26,5 @@ On linux you go:
 ```./serial2keyboard /dev/ttyUSB0 9600```
 
 # Waitaminute.. what's my serial port??
-Just run the program without any additional arguments to run a scan that results in a list of suitable canditates.
+Just run the program without any additional arguments to run a scan that results in a list of suitable canditates. Thank you to CalPolyUROV for the nifty serial list function [from here](https://github.com/CalPolyUROV/UROV2019/blob/master/raspi/snr/comms/serial/serial_finder.py) 
+
