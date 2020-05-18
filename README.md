@@ -11,7 +11,7 @@ pip3 install pynput pyserial
 ```
 
 # how to run it with python3
-Easiest way if you have python installed is to just "python3 serial2keyboard.py [port] [optional: baudrate]" 
+Easiest way if you have python installed is to just ```python3 serial2keyboard.py [port] [optional: baudrate]``` 
 This shold run on any operating system with the required packages installed.
 
 # Running the precompiled binaries
