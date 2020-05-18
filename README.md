@@ -16,14 +16,18 @@ This shold run on any operating system with the required packages installed.
 
 # Running the precompiled binaries
 
-There's precompiled binaries built with pyinstaller for windows, and linux.
+There's precompiled binaries built with pyinstaller (--onefile) for Windows, OSX and linux.
 
 The exe requires python38.dll to sit next to it, in order to run.
 
 On windows type something like: 
 ```serial2keyboard.exe COM3 9600```
+
 On linux you go:
 ```./serial2keyboard /dev/ttyUSB0 9600```
+
+Mac users, of course, already know how to do this, but in case you forgot:
+```./serial2keyboard /dev/tty.usbserial-1410 9600```
 
 # Waitaminute.. what's my serial port??
 Just run the program without any additional arguments to run a scan that results in a list of suitable canditates. Thank you to CalPolyUROV for the nifty serial list function [from here](https://github.com/CalPolyUROV/UROV2019/blob/master/raspi/snr/comms/serial/serial_finder.py) 
