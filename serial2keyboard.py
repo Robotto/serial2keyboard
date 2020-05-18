@@ -36,15 +36,20 @@ def list_ports():
 
 if(len(sys.argv)<2):
 	print("usage:")
-	print("To run the python script: 'python3 serial2keyboard.py [Port]', eg: 'python3 serial2keyboard.py /dev/ttyUSB0'")
-	print("To run the native executable made with pyinstaller: './serial2keyboard(probably add .exe on windows) [Port]'")
-
+	print("To run the python script: 'python3 serial2keyboard.py [Port] [Optional: baud rate]', eg: 'python3 serial2keyboard.py /dev/ttyUSB0', or 'python3 serial2keyboard.py /dev/ttyUSB0 9600'")
+	print("To run the native executable made with pyinstaller: './serial2keyboard(probably add .exe on windows) [Port] [optional: baudrate]'")
+	print("Default baud rate if not supplied as second argument: 9600")
 	print("Suspected suitable serial ports are:", list_ports())
 	sys.exit(1)
 
 print("Attempting to open serial port: ", sys.argv[1])
+baudRate=9600
+if(len(sys.argv)==3):
+	baudRate=int(sys.argv[2])
+print("Setting baud rate to",baudRate)
+
 try:
-	s = serial.Serial(sys.argv[1],115200,timeout=1)
+	s = serial.Serial(sys.argv[1],baudRate,timeout=1)
 except:
 	print("Failed to open", sys.argv[1], "as a serial port.. are you doing this right?")
 	sys.exit(1)
