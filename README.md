@@ -5,7 +5,7 @@ This works really well with Arduino's
 ```Serial.prinln()``` function, as it waits for a newline terminated ASCII string to arrive, so an arduino could go:
 ```Serial.println("password");``` and this program would type ```password``` and press [ENTER] for you.
 
-# requirements if you want to run it with python:
+# requirements if you want to run it with python
 ```
 pip3 install pynput pyserial
 ```
@@ -18,7 +18,7 @@ This shold run on any operating system with the required packages installed.
 
 There's precompiled binaries built with pyinstaller (--onefile) for Windows, OSX and linux.
 
-They shouldn't require you to install anything else, but I've only tested on systems with full python installations.. So.. Your mileage may vary... 
+They shouldn't require you to install anything else... 
 
 On windows type something like: 
 ```serial2keyboard.exe COM3 9600```
